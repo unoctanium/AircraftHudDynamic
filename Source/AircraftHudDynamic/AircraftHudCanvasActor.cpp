@@ -11,8 +11,7 @@ AAircraftHudCanvasActor::AAircraftHudCanvasActor()
         PrimaryActorTick.bCanEverTick = true; 
         //TextureSize = 256; 
 
-        // Create the drawing canvas (the dynamic texture) to paint on in
-        HudDrawingCanvas = NewObject<UAircraftHudDrawingCanvas>();
+
 
         // Create the static mesh to apply the dynamic texture to it
         HudDrawingCanvasMesh = GetStaticMeshComponent();
@@ -55,12 +54,17 @@ void AAircraftHudCanvasActor::SetupCanvas()
 
         HudDrawingCanvasMesh = GetStaticMeshComponent();
 
-        HudDrawingCanvas->InitializeDrawingCanvas(TextureSize, TextureSize); 
-        //HudDrawingCanvas->InitializeDrawingTools(10, FColor::Blue); 
 
-        //mDynamicMaterials.Empty(); 
-        //mDynamicMaterials.Add(GetStaticMeshComponent()->CreateAndSetMaterialInstanceDynamic(0)); 
-        //mDynamicMaterials[0]->SetTextureParameterValue(TEXT("DynamicTexture"), HudDrawingCanvas->GetDrawingCanvas()); 
+        // Create the drawing canvas (the dynamic texture) to paint on in
+        HudDrawingCanvas = NewObject<UAircraftHudDrawingCanvas>();
+
+
+        HudDrawingCanvas->InitializeDrawingCanvas(TextureSize, TextureSize); 
+        HudDrawingCanvas->InitializeDrawingTools(10, FColor::Blue); 
+
+        mDynamicMaterials.Empty(); 
+        mDynamicMaterials.Add(GetStaticMeshComponent()->CreateAndSetMaterialInstanceDynamic(0)); 
+        mDynamicMaterials[0]->SetTextureParameterValue(TEXT("DynamicTexture"), HudDrawingCanvas->GetDrawingCanvas()); 
        
         //SetActorRelativeScale3D(FVector(TextureSize / 100, TextureSize / 100, 1)); 
 } 
