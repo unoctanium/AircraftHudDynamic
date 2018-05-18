@@ -1,0 +1,106 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "AircraftHudDynamic (Debug)",
+			"request": "launch",
+			"preLaunchTask": "AircraftHudDynamic Mac Debug Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic-Mac-Debug.app/Contents/MacOS/AircraftHudDynamic-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "AircraftHudDynamic (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "AircraftHudDynamic Mac DebugGame Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic-Mac-DebugGame.app/Contents/MacOS/AircraftHudDynamic-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "AircraftHudDynamic (Development)",
+			"request": "launch",
+			"preLaunchTask": "AircraftHudDynamic Mac Development Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic.app/Contents/MacOS/AircraftHudDynamic",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "AircraftHudDynamic (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "AircraftHudDynamic Mac Shipping Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic-Mac-Shipping.app/Contents/MacOS/AircraftHudDynamic-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "AircraftHudDynamic (Test)",
+			"request": "launch",
+			"preLaunchTask": "AircraftHudDynamic Mac Test Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic-Mac-Test.app/Contents/MacOS/AircraftHudDynamic-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "AircraftHudDynamicEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "AircraftHudDynamicEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-debug"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "AircraftHudDynamicEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "AircraftHudDynamicEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-debug"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "AircraftHudDynamicEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "AircraftHudDynamicEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.19"
+		}
+	]
+}
