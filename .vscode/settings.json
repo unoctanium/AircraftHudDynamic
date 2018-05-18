@@ -1,7 +1,8 @@
 {
 	"files.exclude": {
-		"/Users/odo/Projects/ue4/AircraftHudDynamic/.vscode": true,
-		"/Users/odo/Projects/ue4/AircraftHudDynamic/Content": true,
-		"/Users/odo/Projects/ue4/AircraftHudDynamic/Intermediate": true
+		"G:/UE4/prj/AircraftHudDynamic/.git": true,
+		"G:/UE4/prj/AircraftHudDynamic/.vscode": true,
+		"G:/UE4/prj/AircraftHudDynamic/Content": true,
+		"G:/UE4/prj/AircraftHudDynamic/Intermediate": true
 	}
 }
