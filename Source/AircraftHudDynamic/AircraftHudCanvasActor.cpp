@@ -55,7 +55,7 @@ void AAircraftHudCanvasActor::SetupCanvas()
 
         HudDrawingCanvasMesh = GetStaticMeshComponent();
 
-        //HudDrawingCanvas->InitializeDrawingCanvas(TextureSize, TextureSize); 
+        HudDrawingCanvas->InitializeDrawingCanvas(TextureSize, TextureSize); 
         //HudDrawingCanvas->InitializeDrawingTools(10, FColor::Blue); 
 
         //mDynamicMaterials.Empty(); 
