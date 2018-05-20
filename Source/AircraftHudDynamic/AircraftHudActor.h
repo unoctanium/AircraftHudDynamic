@@ -6,7 +6,7 @@
 #include "Engine/StaticMeshActor.h" 
 #include "Runtime/Engine/Classes/Components/StaticMeshComponent.h" 
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h" 
-//#include "ProceduralMesh/ProceduralMeshComponent.h"
+
 #include "AircraftHudDrawingCanvas.h" 
 #include "AircraftHudActor.generated.h" 
 
