@@ -8,10 +8,10 @@
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h" 
 //#include "ProceduralMesh/ProceduralMeshComponent.h"
 #include "AircraftHudDrawingCanvas.h" 
-#include "AircraftHudCanvasActor.generated.h" 
+#include "AircraftHudActor.generated.h" 
 
 UCLASS(Blueprintable, BlueprintType) 
-class AAircraftHudCanvasActor : public AStaticMeshActor 
+class AAircraftHudActor : public AStaticMeshActor 
 { 
         GENERATED_BODY() 
 
@@ -34,7 +34,7 @@ public:
         UFUNCTION(BlueprintCallable, Category = AircraftHud) 
                 void UpdateCanvas(); 
         
-        AAircraftHudCanvasActor(); 
+        AAircraftHudActor(); 
         
 protected: 
         virtual void BeginPlay() override; 
@@ -49,4 +49,8 @@ private:
         // HudImplementation 
         
         float mDeltaTimeDt; 
+
+        // Test
+
+        int mDrawingTest;
 }; 

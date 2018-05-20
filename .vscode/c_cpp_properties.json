@@ -700,10 +700,8 @@
                     "C:\\Program Files (x86)\\Windows Kits\\8.1\\include\\um",
                     "C:\\Program Files (x86)\\Windows Kits\\8.1\\include\\winrt"
                 ]
-            },
-            "cStandard": "c11",
-            "cppStandard": "c++17"
+            }
         }
     ],
-    "version": 3
+    "version": 4
 }

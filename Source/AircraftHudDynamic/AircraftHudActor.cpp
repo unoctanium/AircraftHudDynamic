@@ -1,12 +1,12 @@
 // Copyright Odo
-#include "AircraftHudCanvasActor.h" 
+#include "AircraftHudActor.h" 
 
 // REWORK FOR MODULE
 #include "AircraftHudDynamic.h"
 #include "Modules/ModuleManager.h"
 
 
-AAircraftHudCanvasActor::AAircraftHudCanvasActor() 
+AAircraftHudActor::AAircraftHudActor() 
 { 
         PrimaryActorTick.bCanEverTick = true; 
         //TextureSize = 256; 
@@ -31,17 +31,17 @@ AAircraftHudCanvasActor::AAircraftHudCanvasActor()
 
 
 
-void AAircraftHudCanvasActor::BeginPlay() 
+void AAircraftHudActor::BeginPlay() 
 { 
         Super::BeginPlay(); 
 } 
 
-void AAircraftHudCanvasActor::EndPlay(const EEndPlayReason::Type EndPlayReason) 
+void AAircraftHudActor::EndPlay(const EEndPlayReason::Type EndPlayReason) 
 { 
         Super::EndPlay(EndPlayReason); 
 } 
 
-void AAircraftHudCanvasActor::PostInitializeComponents() 
+void AAircraftHudActor::PostInitializeComponents() 
 { 
         Super::PostInitializeComponents(); 
         
@@ -49,7 +49,7 @@ void AAircraftHudCanvasActor::PostInitializeComponents()
 } 
 
 
-void AAircraftHudCanvasActor::SetupCanvas() 
+void AAircraftHudActor::SetupCanvas() 
 { 
 
         HudDrawingCanvasMesh = GetStaticMeshComponent();
@@ -58,34 +58,38 @@ void AAircraftHudCanvasActor::SetupCanvas()
         // Create the drawing canvas (the dynamic texture) to paint on in
         HudDrawingCanvas = NewObject<UAircraftHudDrawingCanvas>();
 
-
         HudDrawingCanvas->InitializeDrawingCanvas(TextureSize, TextureSize); 
-        HudDrawingCanvas->InitializeDrawingTools(10, FColor::Blue); 
+        HudDrawingCanvas->InitializeDrawingTools(4, FColor::Blue); 
 
         mDynamicMaterials.Empty(); 
         mDynamicMaterials.Add(GetStaticMeshComponent()->CreateAndSetMaterialInstanceDynamic(0)); 
         mDynamicMaterials[0]->SetTextureParameterValue(TEXT("DynamicTexture"), HudDrawingCanvas->GetDrawingCanvas()); 
        
-        //SetActorRelativeScale3D(FVector(TextureSize / 100, TextureSize / 100, 1)); 
+        SetActorRelativeScale3D(FVector(TextureSize / 100.0f, TextureSize / 100.0f, 1)); 
 } 
 
 
-void AAircraftHudCanvasActor::Tick(float DeltaTime) 
+void AAircraftHudActor::Tick(float DeltaTime) 
 { 
         Super::Tick(DeltaTime); 
 
         mDeltaTimeDt += DeltaTime; 
         
-        if (mDeltaTimeDt > 0.05) 
+        if (mDeltaTimeDt > 0.02) 
         { 
                 mDeltaTimeDt = 0.0f; 
-                HudDrawingCanvas->DrawDot(100,100); 
+
+                for (int u=0; u<256;u++)
+                        HudDrawingCanvas->DrawDot(u, mDrawingTest);         
+                mDrawingTest += 1;
+                mDrawingTest %= 256;
+               
                 UpdateCanvas(); 
         } 
 } 
 
 
-void AAircraftHudCanvasActor::UpdateCanvas() 
+void AAircraftHudActor::UpdateCanvas() 
 { 
         HudDrawingCanvas->UpdateDrawingCanvas(); 
 } 
