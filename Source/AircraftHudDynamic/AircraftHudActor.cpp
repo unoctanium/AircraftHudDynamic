@@ -62,7 +62,7 @@ void AAircraftHudActor::SetupCanvas()
         HudDrawingCanvas->InitializeDrawingTools(4, FColor::Blue); 
 
         mDynamicMaterials.Empty(); 
-        mDynamicMaterials.Add(GetStaticMeshComponent()->CreateAndSetMaterialInstanceDynamic(0)); 
+        mDynamicMaterials.Add(HudDrawingCanvasMesh->CreateAndSetMaterialInstanceDynamic(0)); 
         mDynamicMaterials[0]->SetTextureParameterValue(TEXT("DynamicTexture"), HudDrawingCanvas->GetDrawingCanvas()); 
        
         SetActorRelativeScale3D(FVector(TextureSize / 100.0f, TextureSize / 100.0f, 1)); 
@@ -86,6 +86,8 @@ void AAircraftHudActor::Tick(float DeltaTime)
                
                 UpdateCanvas(); 
         } 
+
+        //UE_LOG(LogTemp, Warning, TEXT("ActorTick"));
 } 
 
 
