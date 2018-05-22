@@ -44,6 +44,9 @@ public:
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
                 void DrawPixel(const int32 pixelCoordX, const int32 pixelCoordY, bool bAutoUpdate = true); 
   
+        UFUNCTION(BlueprintCallable, Category = DrawingTools) 
+                void SetColor(FColor inBrushColor);
+
         UAircraftHudDrawingCanvas(); 
         //~UAircraftHudDrawingCanvas(); 
   

@@ -148,3 +148,9 @@ void UAircraftHudDrawingCanvas::DrawPixel(const int32 pixelCoordX, const int32 p
                 UpdateDrawingCanvas();  
 
 }
+
+
+void UAircraftHudDrawingCanvas::SetColor(FColor inBrushColor)
+{
+        brushColor = inBrushColor;
+}

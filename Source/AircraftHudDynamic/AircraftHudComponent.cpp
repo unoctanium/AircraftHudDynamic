@@ -13,7 +13,7 @@ UAircraftHudComponent::UAircraftHudComponent()
         //TextureSize = 256; 
 
         bWantsInitializeComponent = true;
-        bWantsBeginPlay = true;
+        //bWantsBeginPlay = true;
         bAutoActivate = true;
 
         // Create the static mesh to apply the dynamic texture to it
@@ -76,12 +76,29 @@ void UAircraftHudComponent::TickComponent( float DeltaTime, ELevelTick TickType,
         if (mDeltaTimeDt > 0.02) 
         { 
                 mDeltaTimeDt = 0.0f; 
-
+/*
+                HudDrawingCanvas->SetColor(FColor((float)mDrawingTest, (float)mDrawingTest, (float)mDrawingTest, 255.0f));
                 for (int u=0; u<256;u++)
-                        HudDrawingCanvas->DrawDot(u, mDrawingTest);         
+                        for (int v=0; v<256; v++)
+                                HudDrawingCanvas->DrawPixel(u,v,false);         
                 mDrawingTest += 1;
                 mDrawingTest %= 256;
-               
+
+                
+
+*/              
+
+                gol.Update();
+                for (int u=0; u<TextureSize ;u++)
+                        for (int v=0; v<TextureSize; v++)
+                        {
+                                bool state = gol.GetCell(u,v);
+                                HudDrawingCanvas->SetColor(FColor((state ? 255.0f : 0.0f), 0.0f, 0.0f, 255.0f));
+                                HudDrawingCanvas->DrawPixel(u,v,false); 
+                        }
+                                
+
+
                 UpdateCanvas(); 
         } 
 

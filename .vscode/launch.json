@@ -4,127 +4,103 @@
 		{
 			"name": "AircraftHudDynamic (Debug)",
 			"request": "launch",
-			"preLaunchTask": "AircraftHudDynamic Win64 Debug Build",
-			"program": "G:\\UE4\\prj\\AircraftHudDynamic\\Binaries\\Win64\\AircraftHudDynamic-Win64-Debug.exe",
+			"preLaunchTask": "AircraftHudDynamic Mac Debug Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic-Mac-Debug.app/Contents/MacOS/AircraftHudDynamic-Mac-Debug",
 			"args": [
 			],
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
 		},
 		{
 			"name": "AircraftHudDynamic (DebugGame)",
 			"request": "launch",
-			"preLaunchTask": "AircraftHudDynamic Win64 DebugGame Build",
-			"program": "G:\\UE4\\prj\\AircraftHudDynamic\\Binaries\\Win64\\AircraftHudDynamic-Win64-DebugGame.exe",
+			"preLaunchTask": "AircraftHudDynamic Mac DebugGame Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic-Mac-DebugGame.app/Contents/MacOS/AircraftHudDynamic-Mac-DebugGame",
 			"args": [
 			],
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
 		},
 		{
 			"name": "AircraftHudDynamic (Development)",
 			"request": "launch",
-			"preLaunchTask": "AircraftHudDynamic Win64 Development Build",
-			"program": "G:\\UE4\\prj\\AircraftHudDynamic\\Binaries\\Win64\\AircraftHudDynamic.exe",
+			"preLaunchTask": "AircraftHudDynamic Mac Development Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic.app/Contents/MacOS/AircraftHudDynamic",
 			"args": [
 			],
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
 		},
 		{
 			"name": "AircraftHudDynamic (Shipping)",
 			"request": "launch",
-			"preLaunchTask": "AircraftHudDynamic Win64 Shipping Build",
-			"program": "G:\\UE4\\prj\\AircraftHudDynamic\\Binaries\\Win64\\AircraftHudDynamic-Win64-Shipping.exe",
+			"preLaunchTask": "AircraftHudDynamic Mac Shipping Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic-Mac-Shipping.app/Contents/MacOS/AircraftHudDynamic-Mac-Shipping",
 			"args": [
 			],
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
 		},
 		{
 			"name": "AircraftHudDynamic (Test)",
 			"request": "launch",
-			"preLaunchTask": "AircraftHudDynamic Win64 Test Build",
-			"program": "G:\\UE4\\prj\\AircraftHudDynamic\\Binaries\\Win64\\AircraftHudDynamic-Win64-Test.exe",
+			"preLaunchTask": "AircraftHudDynamic Mac Test Build",
+			"program": "/Users/odo/Projects/ue4/AircraftHudDynamic/Binaries/Mac/AircraftHudDynamic-Mac-Test.app/Contents/MacOS/AircraftHudDynamic-Mac-Test",
 			"args": [
 			],
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
 		},
 		{
 			"name": "AircraftHudDynamicEditor (Debug)",
 			"request": "launch",
-			"preLaunchTask": "AircraftHudDynamicEditor Win64 Debug Build",
-			"program": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"preLaunchTask": "AircraftHudDynamicEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
 			"args": [
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-debug"
 			],
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
 		},
 		{
 			"name": "AircraftHudDynamicEditor (DebugGame)",
 			"request": "launch",
-			"preLaunchTask": "AircraftHudDynamicEditor Win64 DebugGame Build",
-			"program": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"preLaunchTask": "AircraftHudDynamicEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
 			"args": [
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-debug"
 			],
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
 		},
 		{
 			"name": "AircraftHudDynamicEditor (Development)",
 			"request": "launch",
-			"preLaunchTask": "AircraftHudDynamicEditor Win64 Development Build",
-			"program": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"preLaunchTask": "AircraftHudDynamicEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
 			"args": [
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject"
 			],
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19",
-			"stopAtEntry": false,
-			"externalConsole": true,
-			"type": "cppvsdbg",
-			"visualizerFile": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19",
+			"type": "lldb"
 		},
 		{
 			"name": "Generate Project Files",
-			"type": "clr",
+			"type": "mono",
 			"request": "launch",
-			"program": "G:\\UE4\\dev\\Epic Games\\UE_4.19\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
-			"console": "externalTerminal",
+			"program": "/Users/Shared/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=\"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject\"",
+				"-project=\"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject\"",
 				"-game",
 				"-engine"
 			],
 			"internalConsoleOptions": "openOnSessionStart",
-			"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+			"cwd": "/Users/Shared/Epic Games/UE_4.19"
 		}
 	]
 }

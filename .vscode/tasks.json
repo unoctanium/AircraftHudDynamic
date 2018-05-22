@@ -2,571 +2,306 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "AircraftHudDynamic Win32 Debug Build",
+			"label": "AircraftHudDynamic Mac Debug Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Debug Rebuild",
+			"label": "AircraftHudDynamic Mac Debug Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"AircraftHudDynamic Win32 Debug Clean"
+				"AircraftHudDynamic Mac Debug Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Debug Clean",
+			"label": "AircraftHudDynamic Mac Debug Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 DebugGame Build",
+			"label": "AircraftHudDynamic Mac DebugGame Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 DebugGame Rebuild",
+			"label": "AircraftHudDynamic Mac DebugGame Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"AircraftHudDynamic Win32 DebugGame Clean"
+				"AircraftHudDynamic Mac DebugGame Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 DebugGame Clean",
+			"label": "AircraftHudDynamic Mac DebugGame Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Development Build",
+			"label": "AircraftHudDynamic Mac Development Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Development Rebuild",
+			"label": "AircraftHudDynamic Mac Development Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"AircraftHudDynamic Win32 Development Clean"
+				"AircraftHudDynamic Mac Development Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Development Clean",
+			"label": "AircraftHudDynamic Mac Development Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Shipping Build",
+			"label": "AircraftHudDynamic Mac Shipping Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Shipping Rebuild",
+			"label": "AircraftHudDynamic Mac Shipping Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"AircraftHudDynamic Win32 Shipping Clean"
+				"AircraftHudDynamic Mac Shipping Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Shipping Clean",
+			"label": "AircraftHudDynamic Mac Shipping Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "AircraftHudDynamic Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"AircraftHudDynamic",
+				"Mac",
+				"Test",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Test Build",
+			"label": "AircraftHudDynamic Mac Test Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win32 Test Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win32",
-				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"AircraftHudDynamic Win32 Test Clean"
+				"AircraftHudDynamic Mac Test Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamic Win32 Test Clean",
+			"label": "AircraftHudDynamic Mac Test Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
-				"Win32",
+				"Mac",
 				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Debug Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Debug Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"AircraftHudDynamic Win64 Debug Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Debug Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 DebugGame Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 DebugGame Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"AircraftHudDynamic Win64 DebugGame Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 DebugGame Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Development Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Development Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"AircraftHudDynamic Win64 Development Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Development Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Shipping Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Shipping Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"AircraftHudDynamic Win64 Shipping Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Shipping Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Test Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Test Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"AircraftHudDynamic Win64 Test Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamic Win64 Test Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"AircraftHudDynamic",
-				"Win64",
-				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Debug Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Debug Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -575,52 +310,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Debug Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS DebugGame Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS DebugGame Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -629,52 +365,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS DebugGame Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Development Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Development Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -683,52 +420,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Development Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Shipping Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Shipping Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -737,52 +475,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Shipping Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Test Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Test Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -791,52 +530,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic IOS Test Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"IOS",
 				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Debug Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Debug Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -845,52 +585,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Debug Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 DebugGame Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 DebugGame Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -899,52 +640,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 DebugGame Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Development Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Development Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -953,52 +695,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Development Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Shipping Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Shipping Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1007,52 +750,53 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Shipping Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Shipping",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Test Build",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Test Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1061,186 +805,190 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
 			"label": "AircraftHudDynamic HTML5 Test Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamic",
 				"HTML5",
 				"Test",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "AircraftHudDynamicEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"AircraftHudDynamicEditor",
+				"Mac",
+				"Debug",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamicEditor Win64 Debug Build",
+			"label": "AircraftHudDynamicEditor Mac Debug Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamicEditor",
-				"Win64",
+				"Mac",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamicEditor Win64 Debug Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamicEditor",
-				"Win64",
-				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"AircraftHudDynamicEditor Win64 Debug Clean"
+				"AircraftHudDynamicEditor Mac Debug Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamicEditor Win64 Debug Clean",
+			"label": "AircraftHudDynamicEditor Mac Debug Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamicEditor",
-				"Win64",
+				"Mac",
 				"Debug",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "AircraftHudDynamicEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"AircraftHudDynamicEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamicEditor Win64 DebugGame Build",
+			"label": "AircraftHudDynamicEditor Mac DebugGame Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamicEditor",
-				"Win64",
+				"Mac",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamicEditor Win64 DebugGame Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamicEditor",
-				"Win64",
-				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"AircraftHudDynamicEditor Win64 DebugGame Clean"
+				"AircraftHudDynamicEditor Mac DebugGame Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamicEditor Win64 DebugGame Clean",
+			"label": "AircraftHudDynamicEditor Mac DebugGame Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamicEditor",
-				"Win64",
+				"Mac",
 				"DebugGame",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
+			}
+		},
+		{
+			"label": "AircraftHudDynamicEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"AircraftHudDynamicEditor",
+				"Mac",
+				"Development",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamicEditor Win64 Development Build",
+			"label": "AircraftHudDynamicEditor Mac Development Rebuild",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamicEditor",
-				"Win64",
+				"Mac",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
-			}
-		},
-		{
-			"label": "AircraftHudDynamicEditor Win64 Development Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"AircraftHudDynamicEditor",
-				"Win64",
-				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"AircraftHudDynamicEditor Win64 Development Clean"
+				"AircraftHudDynamicEditor Mac Development Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		},
 		{
-			"label": "AircraftHudDynamicEditor Win64 Development Clean",
+			"label": "AircraftHudDynamicEditor Mac Development Clean",
 			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
 			"args": [
 				"AircraftHudDynamicEditor",
-				"Win64",
+				"Mac",
 				"Development",
-				"G:\\UE4\\prj\\AircraftHudDynamic\\AircraftHudDynamic.uproject",
-				"-waitmutex"
+				"/Users/odo/Projects/ue4/AircraftHudDynamic/AircraftHudDynamic.uproject",
+				"-waitmutex",
+				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "G:\\UE4\\dev\\Epic Games\\UE_4.19"
+				"cwd": "/Users/Shared/Epic Games/UE_4.19"
 			}
 		}
 	]

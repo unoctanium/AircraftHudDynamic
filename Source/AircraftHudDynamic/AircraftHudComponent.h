@@ -7,6 +7,7 @@
 #include "Runtime/Core/Public/HAL/Platform.h"
 #include "Runtime/CoreUObject/Public/UObject/ConstructorHelpers.h" 
 
+#include "GameOfLife.h"
 
 #include "AircraftHudDrawingCanvas.h" 
 #include "AircraftHudComponent.generated.h"
@@ -57,6 +58,8 @@ private:
         // Test
 
         int mDrawingTest;
+
+        GameOfLife gol;
 	
 	
 };
