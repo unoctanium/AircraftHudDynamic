@@ -34,11 +34,11 @@ void UAircraftHudComponent::InitializeComponent()
 {
 	Super::InitializeComponent();
 
-    PrimaryComponentTick.bCanEverTick = true;
-    PrimaryComponentTick.bStartWithTickEnabled = false;
+        PrimaryComponentTick.bCanEverTick = true;
+        PrimaryComponentTick.bStartWithTickEnabled = false;
 
-    SetupCanvas();
-    SetComponentTickEnabled(true);
+        SetupCanvas();
+        SetComponentTickEnabled(true);
 }
 
 void UAircraftHudComponent::BeginPlay() 
@@ -57,13 +57,23 @@ void UAircraftHudComponent::SetupCanvas()
         HudDrawingCanvas = NewObject<UAircraftHudDrawingCanvas>();
 
         HudDrawingCanvas->InitializeDrawingCanvas(TextureSize, TextureSize); 
-        HudDrawingCanvas->InitializeDrawingTools(4, FColor::Blue); 
+        HudDrawingCanvas->SetBrush(4, FColor::Blue); 
 
         mDynamicMaterials.Empty(); 
         mDynamicMaterials.Add(HudDrawingCanvasMesh->CreateAndSetMaterialInstanceDynamic(0)); 
         mDynamicMaterials[0]->SetTextureParameterValue(TEXT("DynamicTexture"), HudDrawingCanvas->GetDrawingCanvas()); 
        
         SetRelativeScale3D(FVector(TextureSize / 100.0f, TextureSize / 100.0f, 1)); 
+
+
+        HudDrawingCanvas->SetColor(FColor(0,0,255,255));
+        HudDrawingCanvas->AddLayer();
+        HudDrawingCanvas->AddLine(0, 0,0,255,255);
+        HudDrawingCanvas->AddLine(0, 100,100,100,156);
+        HudDrawingCanvas->AddCircle(0, 128,128,128);
+        HudDrawingCanvas->AddCircle(0, 128,128,20);
+
+        
 } 
 
 
@@ -87,16 +97,23 @@ void UAircraftHudComponent::TickComponent( float DeltaTime, ELevelTick TickType,
                 
 
 */              
-
+/*
                 gol.Update();
                 for (int u=0; u<TextureSize ;u++)
                         for (int v=0; v<TextureSize; v++)
                         {
                                 bool state = gol.GetCell(u,v);
                                 HudDrawingCanvas->SetColor(FColor((state ? 255.0f : 0.0f), 0.0f, 0.0f, 255.0f));
-                                HudDrawingCanvas->DrawPixel(u,v,false); 
+                                HudDrawingCanvas->DrawPoint(u,v); 
                         }
-                                
+*/                                
+
+                //HudDrawingCanvas->ClearDrawingCanvas();
+                HudDrawingCanvas->TransformLayer(0, 0, 0, 128, 128, 0, true);
+                HudDrawingCanvas->DrawLayer(0);
+                mDrawingTest += 1;
+                mDrawingTest %= 256;
+
 
 
                 UpdateCanvas(); 

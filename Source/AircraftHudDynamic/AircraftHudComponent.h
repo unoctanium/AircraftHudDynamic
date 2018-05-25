@@ -59,7 +59,8 @@ private:
 
         int mDrawingTest;
 
+        /*
         GameOfLife gol;
-	
+	*/
 	
 };

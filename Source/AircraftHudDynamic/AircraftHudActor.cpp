@@ -59,7 +59,7 @@ void AAircraftHudActor::SetupCanvas()
         HudDrawingCanvas = NewObject<UAircraftHudDrawingCanvas>();
 
         HudDrawingCanvas->InitializeDrawingCanvas(TextureSize, TextureSize); 
-        HudDrawingCanvas->InitializeDrawingTools(4, FColor::Blue); 
+        HudDrawingCanvas->SetBrush(4, FColor::Blue); 
 
         mDynamicMaterials.Empty(); 
         mDynamicMaterials.Add(HudDrawingCanvasMesh->CreateAndSetMaterialInstanceDynamic(0)); 
@@ -80,7 +80,7 @@ void AAircraftHudActor::Tick(float DeltaTime)
                 mDeltaTimeDt = 0.0f; 
 
                 for (int u=0; u<256;u++)
-                        HudDrawingCanvas->DrawDot(u, mDrawingTest);         
+                        HudDrawingCanvas->DrawPoint(u, mDrawingTest);         
                 mDrawingTest += 1;
                 mDrawingTest %= 256;
                

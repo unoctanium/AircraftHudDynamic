@@ -3,12 +3,12 @@
 #pragma once 
   
 #include <memory> 
-//#include "Runtime/Core/Public/HAL/Platform.h" 
-//#include "Runtime/RHI/Public/RHI.h" 
+#include <cmath>
 #include "HAL/Platform.h" 
 #include "Public/RHI.h" 
 #include "Engine/Texture2D.h" 
 #include "Object.h" 
+
 #include "AircraftHudDrawingCanvas.generated.h" 
 
 
@@ -29,7 +29,7 @@ enum class EDrawingType : uint8
 USTRUCT()
 struct FDrawingPrimitive
 {
-	GENERATED_BODY()
+	GENERATED_USTRUCT_BODY()
  
         UPROPERTY()
                 EDrawingType dtype;
@@ -50,10 +50,10 @@ struct FDrawingPrimitive
 	        float wd; // or r
 
         //Constructors
-        FDrawingPrimitive(EdrawingType t_, int32 p0x_, int32 p0y_, int32 p1x_, int32 p1y_, float wd_) : dtype(t_), p0x(p0x_), p0y(p0y_), p1x(p1x_), p1y(p1y_), wd(wd_) {}
-        FDrawingPrimitive(EdrawingType t_, int32 p0x_, int32 p0y_, int32 p1x_, int32 p1y_) : dtype(t_), p0x(p0x_), p0y(p0y_), p1x(p1x_), p1y(p1y_), wd(0) {}
-        FDrawingPrimitive(EdrawingType t_, int32 p0x_, int32 p0y_, float wd_) : dtype(t_), p0x(p0x_), p0y(p0y_), p1x(0), p1y(0), wd(wd_) {}
-        FDrawingPrimitive(EdrawingType t_, int32 p0x_, int32 p0y_) : dtype(t_), p0x(p0x_), p0y(p0y_), p1x(0), p1y(0), wd(0) {}
+        FDrawingPrimitive(EDrawingType t_, int32 p0x_, int32 p0y_, int32 p1x_, int32 p1y_, float wd_) : dtype(t_), p0x(p0x_), p0y(p0y_), p1x(p1x_), p1y(p1y_), wd(wd_) {}
+        FDrawingPrimitive(EDrawingType t_, int32 p0x_, int32 p0y_, int32 p1x_, int32 p1y_) : dtype(t_), p0x(p0x_), p0y(p0y_), p1x(p1x_), p1y(p1y_), wd(0) {}
+        FDrawingPrimitive(EDrawingType t_, int32 p0x_, int32 p0y_, float wd_) : dtype(t_), p0x(p0x_), p0y(p0y_), p1x(0), p1y(0), wd(wd_) {}
+        FDrawingPrimitive(EDrawingType t_, int32 p0x_, int32 p0y_) : dtype(t_), p0x(p0x_), p0y(p0y_), p1x(0), p1y(0), wd(0) {}
 	FDrawingPrimitive() : dtype(EDrawingType::DT_None), p0x(0), p0y(0), p1x(0), p1y(0), wd(0) {}
 };
 
@@ -62,7 +62,7 @@ struct FDrawingPrimitive
 USTRUCT()
  struct FDrawingLayer
  {
-        GENERATED_BODY()
+        GENERATED_USTRUCT_BODY()
  
         UPROPERTY()
              TArray<FDrawingPrimitive> DrawingPrimitives;
@@ -85,8 +85,17 @@ USTRUCT()
         UPROPERTY()
                 bool vis;
 
+        UPROPERTY()
+                float c;
+
+        UPROPERTY()
+                float s;
+
         //Constructor
-	FDrawingLayer() : DrawingPrimitives(FDrawingPrimitive.Empty()) {}
+	FDrawingLayer()// : DrawingPrimitives(FDrawingPrimitive.Empty()), tx(0), ty(0), rx(0), ry(0), rad(0), vis(true), s(0), c(0) {}
+        {
+                DrawingPrimitives.Empty();
+        };
  };
 
 
@@ -124,13 +133,13 @@ public:
                 void DrawPoint(int x0, int y0); 
 
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
-                void DrawPoint(int x0, int y0, FColor c);
+                void DrawColorPoint(int x0, int y0, FColor c);
         
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
                 void DrawLine(int x0, int y0, int x1, int y1); 
 
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
-                void DrawLine(int x0, int y0, int x1, int y1, float wd); 
+                void DrawAALine(int x0, int y0, int x1, int y1, float wd); 
 
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
                 void DrawCircle(int xm, int ym, int r);
@@ -138,16 +147,10 @@ public:
         // PRIMITIVES
 
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
-                void AddPoint(const int layer, const int32 px, const int32 py);
-
-        UFUNCTION(BlueprintCallable, Category = DrawingTools) 
-                void AddPoint(const int layer, const int32 px, const int32 py, float wd);
+                void AddPoint(const int layer, const int32 px, const int32 py, float wd=0);
         
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
-                void AddLine(const int32 p0x, const int32 p0y, const int32 p1x, const int p1y);
-
-        UFUNCTION(BlueprintCallable, Category = DrawingTools) 
-                void AddLine(const int32 p0x, const int32 p0y, const int32 p1x, const int p1y, float wd);
+                void AddLine(const int layer, const int32 p0x, const int32 p0y, const int32 p1x, const int p1y, float wd=0);
 
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
                 void AddCircle(const int layer, const int32 mx, const int32 my, float r);
@@ -165,7 +168,10 @@ public:
                 int GetNumLayers();
 
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
-                void TransformLayer(int32 l, int32 tx, int32 ty, int32 mx, int 32 my, float rad, bool vis);
+                void ClearLayer(int32 l);
+
+        UFUNCTION(BlueprintCallable, Category = DrawingTools) 
+                void TransformLayer(int32 l, int32 tx, int32 ty, int32 rx, int32 ry, float rad, bool vis);
 
         UFUNCTION(BlueprintCallable, Category = DrawingTools) 
                 void DrawLayers();
@@ -179,12 +185,12 @@ public:
 
 
 
-
+/*
 
         UFUNCTION(BlueprintCallable, Category = DrawingTools)
                 void RotatePoint(const int32 x0, const int32 y0, const float rad);
 
-
+*/
 
 
 
@@ -223,7 +229,7 @@ private:
         void setPixel(uint8*& pointer); 
         
         // draw brush tool 
-        FColor brusholor; 
+        FColor brushColor; 
 
         std::unique_ptr<uint8[]> canvasBrushMask; 
         int brushRadius; 
