@@ -43,8 +43,8 @@ class UAircraftHudComponent : public UStaticMeshComponent
         
 protected: 
 
-		virtual void InitializeComponent() override;
-		virtual void BeginPlay() override;
+	virtual void InitializeComponent() override;
+	virtual void BeginPlay() override;
         virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
         
 private: 
